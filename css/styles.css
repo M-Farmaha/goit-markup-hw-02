@@ -1,6 +1,6 @@
 :root {
   --first-text-color: #757575;
-  --second-text-color: #212121;
+  --title-text-color: #212121;
   --accent-color: #2196f3;
   --first-bg-color: #ffffff;
   --second-bg-color: #2f303a;
@@ -26,7 +26,6 @@ body {
 .list {
   list-style: none;
 }
-
 
 /* logo */
 .logo {
@@ -56,13 +55,11 @@ body {
   color: var(--accent-color);
 }
 .nav-link {
-  color: var(--second-text-color);
+  color: var(--title-text-color);
 }
 .contact-link {
   color: var(--first-text-color);
 }
-
-
 
 /* hero */
 .hero,
@@ -110,7 +107,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--second-text-color);
+  color: var(--title-text-color);
 }
 .adv-text {
   font-size: 14px;
@@ -126,7 +123,7 @@ body {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--second-text-color);
+  color: var(--title-text-color);
 }
 
 /* team */
@@ -146,7 +143,7 @@ body {
 }
 .team-subtitle {
   font-weight: 500;
-  color: var(--second-text-color);
+  color: var(--title-text-color);
 }
 
 /* footer */
@@ -162,4 +159,47 @@ body {
 }
 .address-link {
   color: rgba(255, 255, 255, 0.6);
+}
+
+/* --------------------PORTFOLIO-------------------- */
+
+.filter-btn,
+.filter-btn-current {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  background-color: var(--alt-bg-color);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.filter-btn-current {
+  color: var(--first-bg-color);
+  background-color: var(--accent-color);
+}
+.filter-btn:hover,
+.filter-btn:focus {
+  color: var(--first-bg-color);
+  background-color: var(--accent-color);
+}
+
+.portfolio-item-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+}
+.portfolio-item-text {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+}
+.portfolio-item {
+  background-color: var(--first-bg-color);
+  border: 1px solid #EEEEEE;
 }
